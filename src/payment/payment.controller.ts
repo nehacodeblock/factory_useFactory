@@ -7,8 +7,7 @@ import { PAYMENT_PROVIDER_TOKEN } from './payment.constants';
 export class PaymentController {
   constructor(
     @Inject(PAYMENT_PROVIDER_TOKEN)
-    // The DI system injects the value associated with the TOKEN string.
-    // We use a type assertion here to satisfy TS without changing runtime behavior.
+
     // @ts-ignore
     private readonly paymentService: PaymentProvider,
   ) {}
